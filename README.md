@@ -31,11 +31,11 @@ func main() {
   }
   log.Hooks.Add(couchdbHook)
 
-	log.WithFields(logrus.Fields{
-		"hostname": "hakaselabs",
+  log.WithFields(logrus.Fields{
+    "hostname": "hakaselabs",
     "source":   "spacex",
     "tag":      "test-tag",
-	}).Info("Hello Captain we can see the moon!")
+   }).Info("Hello Captain we can see the moon!")
 }
 ```
 
